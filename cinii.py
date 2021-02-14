@@ -4,20 +4,18 @@
 # In[ ]:
 
 
-from selenium import webdriver 
-import time 
+from selenium import webdriver
+import time
 import urllib.request as req
 import csv
 import datetime
-from selenium.webdriver.chrome.options import Options
+import chromedriver_binary
 
 
 # In[ ]:
 
 
 val = input("Keyword:")
-options = Options()
-options.add_argument("--headless")
 url = 'https://ci.nii.ac.jp/'
 driver = webdriver.Chrome()
 driver.get(url)
